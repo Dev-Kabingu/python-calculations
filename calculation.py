@@ -7,19 +7,24 @@ operation = input("Enter the operation to apply :")
 operation = operation.upper()
 if operation == "addition":
     answer = number1 + number2
+    symbol = "+"
 elif operation == "divide":
     if number2 == 0:
         answer = "Cannot divide by zero")
         else:
             answer = number1 / number2
+            symbol = "/"
 elif operation == "subtraction":
     answer = number1 - number2
+    symbol = "-"
 elif operation == "multiplication":
     answer = number1 * number2
+    symbol = "*"
 else:
     answer = "operation not valid"
-
-print("The answer is :" answer)    
+    symbol = ""
+print("{number1} {symbol} {number2} =" answer)
+   
 
             
         
