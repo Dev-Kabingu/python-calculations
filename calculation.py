@@ -1,30 +1,27 @@
 
-number1 = float (input("Enter the first number :"))
-number2 = float (input("Enter the second number :"))
+number1 = float(input("Enter the number1: "))
+number2 = float(input("Enter the number2: "))
+operation = input("Enter the operation (+, -, *, /): ")
+if operation == "+":
+    result = number1 + number2
+elif operation == "-":
+    result = number1 - number2
+elif operation == "*":
+    result = number1 * number2
+elif operation == "/":
+    if second_number != 0:
+        result = number1 / number2
+    else:
+        result = "Cannot divide by zero."
+else:
+    result = "Invalid operation"
+
+print(f"Your input was: {number1} {operation} {number2}")
+print(f"The answer is: {result}")
+
+
+
+number1 = float (input("Enter the number1 :"))
+number2 = float (input("Enter the number2 :"))
 operation = input("Enter the operation to apply :")
 
-# convert the user choosen operation to upper case
-operation = operation.upper()
-if operation == "addition":
-    answer = number1 + number2
-    symbol = "+"
-elif operation == "divide":
-    if number2 == 0:
-        answer = "Cannot divide by zero")
-        else:
-            answer = number1 / number2
-            symbol = "/"
-elif operation == "subtraction":
-    answer = number1 - number2
-    symbol = "-"
-elif operation == "multiplication":
-    answer = number1 * number2
-    symbol = "*"
-else:
-    answer = "operation not valid"
-    symbol = ""
-print("{number1} {symbol} {number2} =" answer)
-   
-
-            
-        
